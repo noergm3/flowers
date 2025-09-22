@@ -1067,6 +1067,25 @@
 
     .nombre {
       position: absolute;
+      top: 0%;
+      /* distancia desde la parte superior */
+      left: 50%;
+      transform: translateX(-50%);
+      font-size: 6vmin;
+      /* tamaño del texto */
+      font-weight: bold;
+      color: #ffd700;
+      /* mismo amarillo de los pétalos */
+      text-shadow: 0 0 10px #ff8c00, 0 0 20px #ffff00;
+      /* efecto brillante */
+      font-family: 'Segoe UI', sans-serif;
+      z-index: 3;
+      /* para que quede delante de las flores */
+    }
+
+    .nombre2 {
+      /* display: block; */
+      position: absolute;
       top: 5%;
       /* distancia desde la parte superior */
       left: 50%;
@@ -1086,9 +1105,17 @@
     /* ======== RESPONSIVE ======== */
     @media (max-width:480px) {
       .nombre {
-        margin-top: 30px;
+        margin-top: 70px;
         text-align: center;
-        font-size: 18vmin;
+        font-size: 10vmin;
+        width: 100%;
+      }
+
+      .nombre2 {
+        margin-top: 80px;
+        text-align: center;
+        font-size: 10vmin;
+        width: 100%;
       }
 
       .flowers {
@@ -1117,7 +1144,8 @@
     <div class="shooting-star"></div>
   </div>
   <div class="contenedor">
-    <div class="nombre">Feliz Dia Alejandra ❤️</div>
+    <div class="nombre">Feliz 22 Mi Amor ❤️</div>
+    <div class="nombre2">Jessica Zepeda ❤️</div>
     <div class="flowers">
       <div class="flower flower--1">
         <div class="flower__leafs flower__leafs--1">
